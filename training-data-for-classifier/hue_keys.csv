@@ -1,0 +1,35 @@
+﻿Type,API,"Tokens (Req, Rsp)"
+GET,/api/<username>/lights,"[u'1', u'swversion', u'name', u'swupdate', u'uniqueid', u'capabilities', u'productname', u'state', u'manufacturername', u'config', u'type', u'modelid', u'state', u'lastinstall', u'control', u'streaming', u'certified', u'ct', u'colorgamut', u'mindimlevel', u'maxlumen', u'colorgamuttype', u'max', u'min', u'renderer', u'proxy', u'on', u'hue', u'colormode', u'effect', u'alert', u'xy', u'reachable', u'mode', u'bri', u'ct', u'sat', u'function', u'direction', u'archetype']"
+GET,/api/<username>/lights/new,"[u'8', u'lastscan', u'name', u'7']"
+POST,/api/<username>/lights,"{""deviceid"":[""45AF34"",""543636"",""34AFBE""]},"
+GET,/api/<username>/lights/<id>,"[u'hue', u'sat', u'name', u'on', u'colormode', u'swversion', u'effect', u'alert', u'state', u'xy', u'reachable', u'bri', u'ct', u'type', u'modelid']"
+PUT,/api/<username>/lights/<id>,"{""name"":""Bedroom Light""}"
+PUT,/api/<username>/lights/<id>/state,"[u'hue', u'bri', u'on']"
+GET,/api/<username>/groups,"[u'on', u'xy', u'name', u'hue', u'colormode', u'effect', u'alert', u'1', u'lights', u'2', u'bri', u'action', u'sat', u'type', u'ct']"
+GET,/api/<username>/groups/<id>,"[u'on', u'name', u'hue', u'any_on', u'effect', u'lights', u'state', u'xy', u'bri', u'action', u'all_on', u'ct', u'type', u'class', u'sat']"
+PUT,/api/<username>/groups/<id>/action,"['on', 'bri', 'hue', 'sat', 'xy', 'ct', 'alert', 'effect', 'transitiontime', 'bri_inc', 'sat_inc', 'hue_inc', 'ct_inc', 'xy_inc', 'scene']"
+GET,/api/<username>/schedules,"[u'status', u'body', u'name', u'autodelete', u'created', u'address', u'scene', u'1', u'2', u'command', u'starttime', u'time', u'localtime', u'method', u'description']"
+PUT,/api/<username>/schedules,"['name', 'description', 'command', 'time', 'staus', 'autodelete', 'localtime', 'recycle']"
+GET,/api/<username>/schedules/<id>,"[u'body', u'on', u'description', u'address', u'command', u'time', u'method', u'name']"
+PUT,/api/<username>/schedules/<id>,"['description', 'command', 'time', 'localtime', 'status', 'autodelete']"
+GET,/api/<username>/scenes,"[u'picture', u'locked', u'name', u'appdata', u'3T2SvsxvwteNNys', u'owner', u'lastupdated', u'lights', u'version', u'recycle', u'data', u'4e1c6b20e-on-0']"
+POST,/api/<username>/scenes,"[u'picture', u'name', u'appdata', u'lights', u'version', u'recycle', u'data']"
+PUT,/api/<username>/scenes/<id>/lightstates/<id>,"['on', 'bri', 'hue', 'sat', 'xy', 'ct', 'effect', 'transitiontime']"
+PUT,/api/<username>/scenes/<id>/lightstates/<id>,"['lights', 'lightstates', 'storelightstate']"
+GET,/api/<username>/scenes/<id>,"[u'picture', u'xy', u'locked', u'name', u'appdata', u'lightstates', u'lastupdated', u'1', u'lights', u'version', u'bri', u'recycle', u'owner', u'on']"
+GET,/api/<username>/sensors,"[u'on', u'buttonevent', u'name', u'uniqueid', u'sunsetoffset', u'type', u'swversion', u'daylight', u'long', u'1', u'state', u'2', u'lastupdated', u'manufacturername', u'lat', u'sunriseoffset', u'config', u'modelid']"
+POST,/api/<username>/sensors,"['name', 'modelid', 'swversion', 'type', 'uniqueid', 'manufacturername', 'state', 'config', 'recycle']"
+GET,/api/<username>/sensors/<id>,"[u'name', u'swversion', u'lastupdated', u'manufacturername', u'state', u'uniqueid', u'buttonevent', u'type', u'modelid']"
+GET,/api/<username>/rules,"[u'status', u'body', u'lasttriggered', u'timestriggered', u'name', u'creationtime', u'scene', u'actions', u'operator', u'value', u'address', u'owner', u'conditions', u'method']"
+GET,/api/<username>/config,"['swupdate', 'swupdate2', 'whitelist', 'portalstate', 'apiversion', 'swversion', 'proxyaddress', 'proxyport', 'linkbutton', 'ipaddress', 'mac', 'netmask', 'gateway', 'dhcp', 'portalservices', 'UTC', 'localtime', 'timezone', 'zigbeechannel', 'modelid', 'bridgeid', 'factorynew', 'replacesbridgeid', 'datastoreversion', 'starterkitid']"
+GET,/api/<username>,"[u'bridge', u'linkbutton', u'UTC', u'text', u'whitelist', u'address', u'updatestate', u'ct', u'xy', u'notify', u'bri', u'gateway', u'modelid', u'proxyaddress', u'lastchange', u'1028d66426293e821ecfd9ef1a0731df', u'1', u'lights', u'state', u'2', u'reachable', u'swupdate', u'swupdate2', u'dhcp', u'create date', u'sat', u'type', u'method', u'proxyport', u'hue', u'description', u'on', u'colormode', u'checkforupdate', u'effect', u'alert', u'netmask', u'groups', u'schedules', u'lastinstall', u'ipaddress', u'portalservices', u'autoinstall', u'updatetime', u'name', u'url', u'config', u'swversion', u'mac', u'body', u'command', u'time', u'action', u'last use date']"
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
